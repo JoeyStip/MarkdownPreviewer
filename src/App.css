@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+.App {
+  text-align: center;
+}
+
+.background {
+  background-color: #2b2d42;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding: 15px;
+}
+
+.input {
+  width: 50vw;
+  height: auto;
+  transition: width 1s, height 1s;
+  background-color: #8d99ae;
+  padding-bottom: 15px;
+}
+.input header {
+  width: 100%;
+  height: 27px;
+  font-size: 70%;
+  background-color: #edf2f4;
+  margin-bottom: 15px;
+}
+.input header #expandEditor {
+  float: right;
+  margin: 4px;
+}
+.input span {
+  float: left;
+  margin-left: 4px;
+}
+.input #editor {
+  width: 48vw;
+  height: 250px;
+  transition: width 1s, height 1s;
+  padding: 15px;
+  background-color: #edf2f4;
+  resize: none;
+  outline: none;
+  border: 1px solid #edf2f4;
+  margin: 5px;
+}
+.input #editorExpanded {
+  width: 63vw;
+  height: 83vh;
+  transition: width 1s, height 1s;
+  background-color: #edf2f4;
+  resize: none;
+  outline: none;
+  border: 1px solid #edf2f4;
+}
+.input #editor:focus {
+  outline: none !important;
+  border: 1px solid #2b2d42;
+}
+
+.inputExpanded {
+  width: 65vw;
+  height: 90vh;
+  transition: width 1s, height 1s;
+  background-color: #8d99ae;
+  padding-bottom: 15px;
+}
+
+#previewContainer {
+  min-width: 60vw;
+  width: auto;
+  height: auto;
+  background-color: #8d99ae;
+  margin: 10px;
+}
+#previewContainer header {
+  width: 100%;
+  height: 28px;
+  background-color: #edf2f4;
+  padding: 2px;
+}
+#previewContainer header span {
+  font-size: 70%;
+  position: relative;
+  top: 0px;
+  float: left;
+  margin-left: 4px;
+}
+#previewContainer #display {
+  margin: 15px;
+  padding: 15px;
+  height: auto;
+  background-color: #edf2f4;
+}
+#previewContainer #preview {
+  font-size: 50%;
+}/*# sourceMappingURL=App.css.map */
